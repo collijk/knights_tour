@@ -1,6 +1,8 @@
+from typing import List
+
 BOARD_SIZE = 8
 
-def is_valid_tour(tour):
+def is_valid_tour(tour: List[int]) -> bool:
 
     check_tour_structure(tour)
     current = tour[0]
@@ -35,7 +37,7 @@ def check_tour_structure(tour: List[int]):
             raise ValueError(err_msg + f" Step {step} at index {i} occurs more than once.")
         mask[i] = True
 
-def valid_next_positions(position: int):
+def valid_next_positions(position: int) -> List[int]:
     """Get's a list of valid next positions"""
     row, col = position // BOARD_SIZE, position % BOARD_SIZE
 
