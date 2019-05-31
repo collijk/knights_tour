@@ -7,15 +7,13 @@ def is_valid_tour(tour):
 
     for i, step in enumerate(tour[1:]):
         if step not in valid_next_positions(current):
-            raise ValueError(f"Step {i} from position {current} to {step} is not a Knight's move.")
+            print(f"Step {i} from position {current} to {step} is not a Knight's move.")
+            return False
 
         current = step
 
     print("Provided tour is valid!")
-
-
-
-
+    return True
 
 def check_tour_structure(tour: List[int]):
     """Ensures the tour has the correnct representation."""
