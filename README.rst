@@ -33,3 +33,7 @@ Once installed, you can use the validator from your own code by importing it::
 
    tour = generate_knights_tour()
    is_valid_tour(tour)
+
+
+``is_valid_tour`` expects you to supply your candidate tour as a list of 64
+integers.
