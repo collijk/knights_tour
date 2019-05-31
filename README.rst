@@ -5,7 +5,7 @@ Knight's Tour
 This repository provides a validator (or oracle) for the
 `Knight's Tour <https://en.wikipedia.org/wiki/Knight%27s_tour>`_ problem.
 You can read more about oracles and oracle machines
-`here <https://en.wikipedia.org/wiki/Oracle_machine>`.
+`here <https://en.wikipedia.org/wiki/Oracle_machine>`_.
 
 .. contents::
    :depth: 1
